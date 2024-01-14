@@ -1,0 +1,39 @@
+// @import "/ui/src/styles/variables.scss";
+
+.menu {
+  .title {
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+  }
+  .item {
+    padding: 10px 10px 10px;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px 10px 10px;
+    .description-title {
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: underline;
+      padding-bottom: 10px;
+    }
+    .description-text {
+      font-weight: 400;
+    }
+  }
+}
