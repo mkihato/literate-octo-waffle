@@ -1,6 +1,59 @@
+@import "../ui/src/styles/variables.scss";
+
 .recommended {
-  width: 30%;
-  border: 2px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 38%;
+  // border: solid 2px white;
   border-radius: 10px;
   padding: 30px 30px;
+  h2 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .recommendedArtists {
+    width: 100%;
+    // border: solid 2px white;
+    border-radius: 10px;
+
+    .item {
+      display: flex;
+      gap: 10px;
+      padding: 5px;
+      border-bottom: solid 1px #fff;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .recommendedTracks {
+    h2 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+    .item {
+      display: flex;
+      gap: 10px;
+      padding: 5px;
+      border-bottom: solid 1px #fff;
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      span {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
 }
