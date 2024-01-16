@@ -6,13 +6,15 @@
     font-weight: 200;
     color: black;
   }
+
   .item {
     padding: 10px 10px 10px;
     width: 80%;
     display: flex;
     gap: 10px;
+    margin-top: 5px;
     margin-bottom: 20px;
-    border: 2px solid blue;
+    border: 2px solid white;
     border-radius: 10px;
 
     .icon {
@@ -23,12 +25,21 @@
   .description {
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
+    // border: 2px solid blue;
     border-radius: 20px;
     padding: 10px 10px 10px;
+    .descriptionitem {
+      display: flex;
+      gap: 5px;
+      .icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
     .description-title {
       font-weight: bold;
-      font-size: 14px;
+      font-size: 18px;
       text-decoration: underline;
       padding-bottom: 10px;
     }

@@ -18,3 +18,46 @@ export const menu = [
     icon: "form.svg",
   },
 ];
+
+export const tracks = [
+  {
+    id: 1,
+    image: "/noavatar.png",
+    title: "Troubled waters",
+    artist: "Chris brown",
+    album: "Indigo",
+    duration: "3:15",
+  },
+  {
+    id: 2,
+    image: "/noavatar.png",
+    title: "BS",
+    artist: "Jhene Aiko, H.E.R",
+    album: "Chilombo",
+    duration: "3:09",
+  },
+  {
+    id: 3,
+    image: "/noavatar.png",
+    title: "Lonely at the top",
+    artist: "Asake",
+    album: "Work of Art",
+    duration: "3:15",
+  },
+  {
+    id: 4,
+    image: "/noavatar.png",
+    title: "Check",
+    artist: "kojo funds, RAYE",
+    album: "Check-single",
+    duration: "3:38",
+  },
+  {
+    id: 5,
+    image: "/noavatar.png",
+    title: "Play play",
+    artist: "J hus, Burna boy",
+    album: "Big Conspiracy",
+    duration: "3:27",
+  },
+];

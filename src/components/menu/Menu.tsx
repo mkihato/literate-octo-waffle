@@ -4,7 +4,7 @@ import "../menu/menu.scss";
 const Menu = () => {
   return (
     <div className="menu">
-      <span className="title">Menu</span>
+      <span className="title">What to do?</span>
       {menu.map((item) => (
         <div className="item" key={item.id}>
           <img src={item.icon} alt="" className="icon" />
@@ -12,7 +12,11 @@ const Menu = () => {
         </div>
       ))}
       <div className="description">
-        <span className="description-title">Description</span>
+        <div className="descriptionitem">
+          <img src="/view.svg" alt="" className="icon" />
+          <span className="description-title">Description</span>
+        </div>
+
         <span className="description-text">
           Explore the musical landscape by discovering the top artists that
           resonate with global listeners. Dive into a curated list showcasing
