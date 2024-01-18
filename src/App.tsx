@@ -1,9 +1,9 @@
+import { Paper } from "@mui/material";
 import Content from "./components/content/Content";
 import Footer from "./components/footer/Footer";
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
 import Recommended from "./components/recommended/Recommended";
-import { PrimeReactProvider } from "primereact/api";
 import "./styles/global.scss";
 
 function App() {
