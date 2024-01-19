@@ -61,3 +61,83 @@ export const tracks = [
     duration: "3:27",
   },
 ];
+
+export const recoArtists = [
+  {
+    id: 1,
+    image: "/noavatar.png",
+    artist: "Burna boy",
+  },
+  {
+    id: 2,
+    image: "/noavatar.png",
+    artist: "Arya Star",
+  },
+  {
+    id: 3,
+    image: "/noavatar.png",
+    artist: "Sauti Sol",
+  },
+  {
+    id: 4,
+    image: "/noavatar.png",
+    artist: "Sean Paul",
+  },
+];
+
+export const recoTracks = [
+  {
+    id: 1,
+    image: "/noavatar.png",
+    title: "I want you",
+    artist: "Bien",
+  },
+  {
+    id: 2,
+    image: "/noavatar.png",
+    title: "Temperature",
+    artist: "Sean Paul",
+  },
+  {
+    id: 3,
+    image: "/noavatar.png",
+    title: "Tested,Approved & Trusted",
+    artist: "Burna boy",
+  },
+  {
+    id: 4,
+    image: "/noavatar.png",
+    title: "We Caa Done",
+    artist: "Popcaan ft Drake",
+  },
+  {
+    id: 5,
+    image: "/noavatar.png",
+    title: "Charm",
+    artist: "Rema",
+  },
+  {
+    id: 6,
+    image: "/noavatar.png",
+    title: "Foreplay",
+    artist: "Shenseea",
+  },
+  {
+    id: 7,
+    image: "/noavatar.png",
+    title: "I want you",
+    artist: "Bien",
+  },
+  {
+    id: 8,
+    image: "/noavatar.png",
+    title: "It is what it is",
+    artist: "Adenkule Gold",
+  },
+  {
+    id: 9,
+    image: "/noavatar.png",
+    title: "I'll kill you",
+    artist: "Summer Walker, Jhene Aiko",
+  },
+];
