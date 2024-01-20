@@ -26,8 +26,7 @@
     display: flex;
     flex-direction: column;
     // border: 2px solid blue;
-    border-radius: 20px;
-    padding: 10px 10px 10px;
+
     .descriptionitem {
       display: flex;
       gap: 5px;
@@ -36,15 +35,21 @@
         height: 20px;
       }
     }
-
+    .descriptiontext {
+      border-radius: 20px;
+      border: 2px solid rgb(138, 137, 133);
+      padding: 10px 10px 10px;
+      background-color: rgb(250, 253, 246);
+    }
     .description-title {
       font-weight: bold;
       font-size: 18px;
-      text-decoration: underline;
+
       padding-bottom: 10px;
     }
     .description-text {
       font-weight: 400;
+      color: rgb(164, 66, 0);
     }
   }
 }

@@ -25,7 +25,7 @@ interface Column {
 }
 
 const columns: readonly Column[] = [
-  { id: "id", label: "id", minWidth: 10 },
+  { id: "id", label: "#", minWidth: 10 },
   { id: "image", label: "", minWidth: 50 },
   { id: "title", label: "Title", minWidth: 110 },
 
@@ -83,7 +83,12 @@ export default function StickyHeadTable() {
                 <TableCell
                   key={column.id}
                   align={column.align}
-                  style={{ minWidth: column.minWidth }}
+                  style={{
+                    minWidth: column.minWidth,
+                    fontFamily: "Montserrat",
+                    color: "white",
+                    background: "rgb(25, 20, 20)",
+                  }}
                 >
                   {column.label}
                 </TableCell>

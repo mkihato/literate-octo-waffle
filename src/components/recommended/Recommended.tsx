@@ -7,10 +7,16 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import { recoArtists } from "../../data";
+import { recoArtists, recoTracks } from "../../data";
 
 interface Column {
   id: "id" | "image" | "artist";
+  label: string;
+  minWidth?: number;
+  align?: "center";
+}
+interface Column2 {
+  id: "title" | "image" | "tracks";
   label: string;
   minWidth?: number;
   align?: "center";
@@ -22,6 +28,21 @@ const columns: readonly Column[] = [
   {
     id: "artist",
     label: "artist",
+    minWidth: 50,
+    align: "center",
+  },
+];
+const columns2: readonly Column2[] = [
+  { id: "image", label: "", minWidth: 20 },
+  {
+    id: "title",
+    label: "title",
+    minWidth: 50,
+    align: "center",
+  },
+  {
+    id: "tracks",
+    label: "tracks",
     minWidth: 50,
     align: "center",
   },
@@ -53,7 +74,13 @@ const Recommended = () => {
                   <TableCell
                     key={column.id}
                     align={column.align}
-                    style={{ minWidth: column.minWidth, maxHeight: 20 }}
+                    style={{
+                      minWidth: column.minWidth,
+                      maxHeight: 20,
+                      fontFamily: "Montserrat",
+                      color: "white",
+                      background: "rgb(25, 20, 20)",
+                    }}
                   >
                     {column.label}
                   </TableCell>
@@ -79,8 +106,8 @@ const Recommended = () => {
           </Table>
         </TableContainer>
       </Paper>
-      <div className="recommendedTracks">
-        <h2>Recommended Tracks</h2>
+      <h2>Recommended Tracks</h2>
+      {/* <div className="recommendedTracks">
         <div className="item">
           <img src="/noavatar.png" alt="" className="icon" />
           <span>Troubled waters</span>
@@ -106,7 +133,49 @@ const Recommended = () => {
           <span>Troubled waters</span>
           <span>Chris Brown</span>
         </div>
-      </div>
+      </div> */}
+
+      <Paper sx={{ width: "100%", overflow: "hidden" }}>
+        <TableContainer sx={{ maxHeight: 300 }}>
+          <Table stickyHeader aria-label="sticky table">
+            <TableHead>
+              <TableRow>
+                {columns2.map((column) => (
+                  <TableCell
+                    key={column.id}
+                    align={column.align}
+                    style={{
+                      minWidth: column.minWidth,
+                      maxHeight: 10,
+                      fontFamily: "Montserrat",
+                      color: "white",
+                      background: "rgb(25, 20, 20)",
+                    }}
+                  >
+                    {column.label}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {recoTracks.map((tracks) => {
+                return (
+                  <TableRow hover role="checkbox" tabIndex={-1} key={tracks.id}>
+                    <TableCell>
+                      <img
+                        src={tracks.image}
+                        style={{ height: 30, width: 30 }}
+                      />
+                    </TableCell>
+                    <TableCell>{tracks.title}</TableCell>
+                    <TableCell>{tracks.artist}</TableCell>
+                  </TableRow>
+                );
+              })}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      </Paper>
     </div>
   );
 };

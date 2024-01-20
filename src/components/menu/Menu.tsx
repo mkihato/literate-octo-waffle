@@ -13,18 +13,19 @@ const Menu = () => {
       ))}
       <div className="description">
         <div className="descriptionitem">
-          <img src="/view.svg" alt="" className="icon" />
+          {/* <img src="/view.svg" alt="" className="icon" /> */}
           <span className="description-title">Description</span>
         </div>
-
-        <span className="description-text">
-          Explore the musical landscape by discovering the top artists that
-          resonate with global listeners. Dive into a curated list showcasing
-          the most influential and trending artists across genres. Whether
-          you're seeking new favorites or staying updated on the latest musical
-          sensations, the "View Top Artists" feature is your gateway to a world
-          of musical discovery.
-        </span>
+        <div className="descriptiontext">
+          <span className="description-text">
+            Explore the musical landscape by discovering the top artists that
+            resonate with global listeners. Dive into a curated list showcasing
+            the most influential and trending artists across genres. Whether
+            you're seeking new favorites or staying updated on the latest
+            musical sensations, the "View Top Artists" feature is your gateway
+            to a world of musical discovery.
+          </span>
+        </div>
       </div>
     </div>
   );
