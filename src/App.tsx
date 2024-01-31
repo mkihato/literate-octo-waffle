@@ -6,6 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 import Recommended from "./components/recommended/Recommended";
 import "./styles/global.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Home from "./components/home/Home";
 
 function App() {
   const Layout = () => {
@@ -17,6 +18,7 @@ function App() {
             <Menu />
           </div>
           <div className="contentContainer">
+            {}
             <Outlet />
           </div>
         </div>
@@ -31,13 +33,16 @@ function App() {
       element: <Layout />,
       children: [
         {
+          path: "home",
+          element: <Home />,
+        },
+        {
           path: "top-tracks",
-          element: (
-            <div className="contentContainer">
-              <Content />
-              <Recommended />
-            </div>
-          ),
+          element: <Content />,
+        },
+        {
+          path: "top-artists",
+          element: <Recommended />,
         },
       ],
     },
