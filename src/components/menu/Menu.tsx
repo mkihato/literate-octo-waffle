@@ -17,14 +17,11 @@ const Menu = () => {
           <span className="description-title">Description</span>
         </div>
         <div className="descriptiontext">
-          <span className="description-text">
-            Explore the musical landscape by discovering the top artists that
-            resonate with global listeners. Dive into a curated list showcasing
-            the most influential and trending artists across genres. Whether
-            you're seeking new favorites or staying updated on the latest
-            musical sensations, the "View Top Artists" feature is your gateway
-            to a world of musical discovery.
-          </span>
+          {menu.map((item) => (
+            <span className="description-text" key={item.id}>
+              {item.description}
+            </span>
+          ))}
         </div>
       </div>
     </div>
