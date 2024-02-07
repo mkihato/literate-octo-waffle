@@ -7,6 +7,7 @@ import Recommended from "./components/recommended/Recommended";
 import "./styles/global.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./components/home/Home";
+import Login from "./components/login/Login";
 
 function App() {
   const Layout = () => {
@@ -45,6 +46,10 @@ function App() {
           element: <Recommended />,
         },
       ],
+    },
+    {
+      path: "/login",
+      element: <Login />,
     },
   ]);
 
