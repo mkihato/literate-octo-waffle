@@ -7,7 +7,7 @@
     color: black;
   }
 
-  .item {
+  button {
     padding: 10px 10px 10px;
     width: 80%;
     display: flex;
@@ -18,12 +18,13 @@
     border-radius: 10px;
     cursor: pointer;
     color: black;
-    background: $main-bg;
     .icon {
-      width: 20px;
-      height: 20px;
+      position: relative;
+      width: 40px;
+      height: 40px;
     }
   }
+
   .description {
     display: flex;
     flex-direction: column;
