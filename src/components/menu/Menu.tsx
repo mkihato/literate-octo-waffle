@@ -5,10 +5,16 @@ const Menu = () => {
   return (
     <div className="menu">
       <span className="title">What to do?</span>
-      {menu.map((item) => (
+      {/* {menu.map((item) => (
         <button className="item" key={item.id}>
           <img src={item.icon} alt="" className="icon" />
           <span className="icontitle">{item.title}</span>
+        </button>
+      ))} */}
+      {menu.map((item) => (
+        <button className="btn-hover color" key={item.id}>
+          <img src={item.icon} alt="" className="btn-icon" />
+          <span>{item.title}</span>
         </button>
       ))}
       <div className="description">

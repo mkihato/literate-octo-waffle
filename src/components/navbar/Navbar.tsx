@@ -8,8 +8,6 @@ const Navbar = () => {
         <span>Fusion</span>
       </div>
       <div className="icons">
-        <img src="/app.svg" alt="" className="icon" />
-
         <div className="notification">
           <img src="/notifications.svg" alt="" />
           <span>1</span>
@@ -18,7 +16,6 @@ const Navbar = () => {
           <img src="/man.jpg" alt="" />
           <span>John</span>
         </div>
-        <img src="/settings.svg" alt="" className="icon" />
       </div>
     </div>
   );

@@ -13,8 +13,14 @@
 
   .icons {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
+
+    .icon {
+      height: 40px;
+      width: 40px;
+    }
 
     .notification {
       position: relative;
