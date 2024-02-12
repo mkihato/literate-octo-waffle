@@ -8,6 +8,7 @@ import "./styles/global.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./components/home/Home";
 import Login from "./components/login/Login";
+import Artist from "./components/artists/Artist";
 
 function App() {
   const Layout = () => {
@@ -19,7 +20,6 @@ function App() {
             <Menu />
           </div>
           <div className="contentContainer">
-            {}
             <Outlet />
           </div>
         </div>
@@ -43,7 +43,7 @@ function App() {
         },
         {
           path: "top-artists",
-          element: <Recommended />,
+          element: <Artist />,
         },
       ],
     },

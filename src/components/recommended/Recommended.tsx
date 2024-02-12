@@ -107,33 +107,7 @@ const Recommended = () => {
         </TableContainer>
       </Paper>
       <h2>Recommended Tracks</h2>
-      {/* <div className="recommendedTracks">
-        <div className="item">
-          <img src="/noavatar.png" alt="" className="icon" />
-          <span>Troubled waters</span>
-          <span>Chris Brown</span>
-        </div>
-        <div className="item">
-          <img src="/noavatar.png" alt="" className="icon" />
-          <span>Troubled waters</span>
-          <span>Chris Brown</span>
-        </div>
-        <div className="item">
-          <img src="/noavatar.png" alt="" className="icon" />
-          <span>Troubled waters</span>
-          <span>Chris Brown</span>
-        </div>
-        <div className="item">
-          <img src="/noavatar.png" alt="" className="icon" />
-          <span>Troubled waters</span>
-          <span>Chris Brown</span>
-        </div>
-        <div className="item">
-          <img src="/noavatar.png" alt="" className="icon" />
-          <span>Troubled waters</span>
-          <span>Chris Brown</span>
-        </div>
-      </div> */}
+      
 
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
         <TableContainer sx={{ maxHeight: 300 }}>

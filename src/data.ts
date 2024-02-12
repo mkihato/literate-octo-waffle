@@ -4,6 +4,7 @@ export const menu = [
     title: "View My Top Artists",
     url: "/",
     icon: "user.svg",
+    class: "btn-hover color-1",
     description:
       "Dive into a personalized musical showcase as we unveil the artists who've captured your heart. From soulful crooners to electrifying bands, witness your most-played maestros in one curated list.",
   },
@@ -12,6 +13,7 @@ export const menu = [
     title: "View My Top Tracks",
     url: "/",
     icon: "product.svg",
+    class: "btn-hover color-2",
     description:
       " Relive the rhythm of your life through a collection of 49 tracks that have painted the soundtrack of your journey. Let the melodies carry you through cherished memories and undiscovered realms.",
   },
@@ -20,6 +22,7 @@ export const menu = [
     title: "Artist Fusion",
     url: "/",
     icon: "form.svg",
+    class: "btn-hover color-3",
     description:
       "Forge musical connections with Compare your top artists with friends, and together, create a fusion of sounds that define your unique camaraderie. Explore the similarities, celebrate the differences, and compile a playlist that echoes your shared musical universe.",
   },

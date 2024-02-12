@@ -12,7 +12,7 @@ const Menu = () => {
         </button>
       ))} */}
       {menu.map((item) => (
-        <button className="btn-hover color" key={item.id}>
+        <button className={item.class} key={item.id}>
           <img src={item.icon} alt="" className="btn-icon" />
           <span>{item.title}</span>
         </button>
@@ -22,7 +22,9 @@ const Menu = () => {
           <span className="description-title">Description</span>
         </div>
         <div className="descriptiontext">
-          <span className="description-text">{}</span>
+          {/* {menu.map((item) => (
+            <span className="description-text">{item.description}</span>
+          ))} */}
         </div>
       </div>
     </div>
