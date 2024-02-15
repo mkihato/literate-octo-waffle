@@ -29,6 +29,11 @@
     -o-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+
+    img{
+      height:40px;
+      width:40px;
+    }
   }
 
   .btn-hover:hover {
