@@ -1,7 +1,7 @@
 export const menu = [
   {
     id: 1,
-    title: "View My Top Artists",
+    title: "My Top Artists",
     url: "/",
     icon: "musician.svg",
     class: "btn-hover color-1",
@@ -10,7 +10,7 @@ export const menu = [
   },
   {
     id: 2,
-    title: "View My Top Tracks",
+    title: "My Top Tracks",
     url: "/",
     icon: "top-track-2.svg",
     class: "btn-hover color-2",
