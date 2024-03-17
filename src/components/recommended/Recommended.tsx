@@ -64,7 +64,7 @@ const Recommended = () => {
   };
   return (
     <div className="recommended">
-      <h2>Recommended Artists</h2>
+      <h2>My Top Artists</h2>
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
         <TableContainer sx={{ maxHeight: 300 }}>
           <Table stickyHeader aria-label="sticky table">
@@ -107,7 +107,6 @@ const Recommended = () => {
         </TableContainer>
       </Paper>
       <h2>Recommended Tracks</h2>
-      
 
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
         <TableContainer sx={{ maxHeight: 300 }}>
