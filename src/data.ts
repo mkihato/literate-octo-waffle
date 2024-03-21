@@ -20,7 +20,7 @@ export const menu = [
   {
     id: 3,
     title: "Artist Fusion",
-    url: "/",
+    url: "/artist-fusion",
     icon: "combine.svg",
     class: "btn-hover color-3",
     description:

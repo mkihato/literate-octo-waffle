@@ -1,0 +1,30 @@
+@import "../ui/src/styles/variables.scss";
+.fusion {
+  width: 100%;
+
+  .user-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 40%;
+    height: 90px;
+    border: solid 2px lawngreen;
+    display: flex;
+    js img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    span {
+      display: flex;
+      align-items: center;
+    }
+
+    button {
+      padding: 5px;
+      color: white;
+      width: 40px;
+      height: 20px;
+    }
+  }
+}
