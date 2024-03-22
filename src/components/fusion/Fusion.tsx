@@ -7,7 +7,7 @@ const Fusion = () => {
         <img src="/noavatar.png" alt="" />
         <span>User 1</span>
 
-        <button>Invite</button>
+        <button className="button-33">Invite</button>
       </div>
     </div>
   );
