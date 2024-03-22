@@ -9,6 +9,11 @@ const Fusion = () => {
 
         <button className="button-33">Invite</button>
       </div>
+      <div className="invitee-card">
+        <img src="/noavatar.png" alt="" />
+        <span>Friend</span>
+        <button className="button-34">FUSE</button>
+      </div>
     </div>
   );
 };
