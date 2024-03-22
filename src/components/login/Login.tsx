@@ -41,7 +41,7 @@ const Login = () => {
             ></path>
           </svg>
           UI / EX Designer
-          <div className="name">Login here!!</div>
+          <div className="name">This is where the magic happens!!</div>
         </div>
       </div>
     </div>
