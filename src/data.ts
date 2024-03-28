@@ -214,3 +214,10 @@ export const recoTracks = [
     artist: "Summer Walker, Jhene Aiko",
   },
 ];
+
+
+declare module '*.jpg';
+declare module '*.jpeg';
+declare module '*.png';
+declare module '*.gif';
+declare module '*.svg';
