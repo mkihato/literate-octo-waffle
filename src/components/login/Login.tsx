@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className="log">
       <div className="box">
-        <h2>Welcome</h2>
+        <h2>Welcome to fusion</h2>
         {/* <label className="inp">
           <input type="text" placeholder="user">
             <span className="label">Label</span>
@@ -13,9 +13,9 @@ const Login = () => {
           </input>
         </label> */}
         <form className="form">
-          <label className="label">Email</label>
+          {/* <label className="label">Email</label> */}
           <input type="text" placeholder="Email"></input>
-          <label className="label">Password</label>
+          {/* <label className="label">Password</label> */}
           <input type="text" placeholder="Password"></input>
 
           <button className="original-button">Sign Up</button>
