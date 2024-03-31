@@ -1,6 +1,7 @@
 @import "../ui/src/styles/variables.scss";
 .fusion {
   width: 100%;
+  gap: 10px;
 
   .user-card {
     display: flex;
@@ -70,6 +71,7 @@
     border: solid 2px lawngreen;
     border-radius: 10px;
     display: flex;
+    margin-bottom: 10px;
     img {
       width: 60px;
       height: 60px;
