@@ -46,70 +46,81 @@ function createData(
   return { name, calories, fat, carbs, protein };
 }
 
-const rows = [
-  createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
-  createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
-  createData("Eclair", 262, 16.0, 24, 6.0),
-  createData("Cupcake", 305, 3.7, 67, 4.3),
-  createData("Gingerbread", 356, 16.0, 49, 3.9),
-];
+// const rows = [
+//   createData("Frozen yoghurt", 159, 6.0, 24, 4.0),
+//   createData("Ice cream sandwich", 237, 9.0, 37, 4.3),
+//   createData("Eclair", 262, 16.0, 24, 6.0),
+//   createData("Cupcake", 305, 3.7, 67, 4.3),
+//   createData("Gingerbread", 356, 16.0, 49, 3.9),
+// ];
 
 const Fusion = () => {
   return (
     <div className="fusion">
-      <div className="user-card">
-        <img src="/noavatar.png" alt="" />
-        <span>User 1</span>
+      <div className="fusion1-card">
+        <div className="user-card">
+          <img src="/noavatar.png" alt="" />
+          <span>User 1</span>
 
-        <button className="button-33">Invite</button>
-      </div>
-      <div className="invitee-card">
-        <img src="/noavatar.png" alt="" />
-        <span>Friend</span>
-        <button className="button-34">FUSE</button>
-      </div>
+          <button className="button-33">Invite</button>
+        </div>
+        <div className="invitee-card">
+          <img src="/noavatar.png" alt="" />
+          <span>Friend</span>
+          <button className="button-34">FUSE</button>
+        </div>
 
-      <Paper sx={{ width: "50%", overflow: "hidden" }}>
-        <TableContainer sx={{ maxHeight: 300 }}>
-          <Table stickyHeader aria-label="sticky table">
-            <TableHead>
-              <TableRow>
-                {columns.map((column) => (
-                  <TableCell
-                    key={column.id}
-                    align={column.align}
-                    style={{
-                      minWidth: column.minWidth,
-                      maxHeight: 20,
-                      fontFamily: "Montserrat",
-                      color: "white",
-                      background: "rgb(25, 20, 20)",
-                    }}
-                  >
-                    {column.label}
-                  </TableCell>
-                ))}
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              {recoArtists.map((artist) => {
-                return (
-                  <TableRow hover role="checkbox" tabIndex={-1} key={artist.id}>
-                    <TableCell>{artist.id}</TableCell>
-                    <TableCell>
-                      <img
-                        src={artist.image}
-                        style={{ height: 30, width: 30 }}
-                      />
+        <h4>The artists that you have in common...</h4>
+
+        <Paper sx={{ width: "90%", overflow: "hidden", marginTop: 5 }}>
+          <TableContainer sx={{ maxHeight: 300 }}>
+            <Table stickyHeader aria-label="sticky table">
+              <TableHead>
+                <TableRow>
+                  {columns.map((column) => (
+                    <TableCell
+                      key={column.id}
+                      align={column.align}
+                      style={{
+                        minWidth: column.minWidth,
+                        maxHeight: 20,
+                        fontFamily: "Montserrat",
+                        color: "white",
+                        background: "rgb(25, 20, 20)",
+                      }}
+                    >
+                      {column.label}
                     </TableCell>
-                    <TableCell>{artist.artist}</TableCell>
-                  </TableRow>
-                );
-              })}
-            </TableBody>
-          </Table>
-        </TableContainer>
-      </Paper>
+                  ))}
+                </TableRow>
+              </TableHead>
+              <TableBody>
+                {recoArtists.map((artist) => {
+                  return (
+                    <TableRow
+                      hover
+                      role="checkbox"
+                      tabIndex={-1}
+                      key={artist.id}
+                    >
+                      <TableCell>{artist.id}</TableCell>
+                      <TableCell>
+                        <img
+                          src={artist.image}
+                          style={{ height: 30, width: 30 }}
+                        />
+                      </TableCell>
+                      <TableCell>{artist.artist}</TableCell>
+                    </TableRow>
+                  );
+                })}
+              </TableBody>
+            </Table>
+          </TableContainer>
+        </Paper>
+      </div>
+
+      <div className="fusion2-card">this is where the card should appear</div>
     </div>
   );
 };
